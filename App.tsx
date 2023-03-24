@@ -10,7 +10,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView
       style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <TouchableOpacity onPress={testModule}>
+      <TouchableOpacity onPress={startActivity}>
         <Text>Start Activity</Text>
       </TouchableOpacity>
     </SafeAreaView>

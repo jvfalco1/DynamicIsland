@@ -25,9 +25,9 @@ struct LockScreenView: View {
 struct ContentView: View {
   let context: ActivityViewContext<NotificationAttributes>
     var body: some View {
-      VStack(alignment: .center) {
+      VStack(alignment: .leading) {
         Text(context.attributes.title)
-          .foregroundColor(.white)
+          .foregroundColor(.white).font(.system(size: 36))
         Text(context.state.mesage)
           .foregroundColor(.white)
       }
@@ -67,25 +67,11 @@ struct ActionButtontView: View {
     HStack{
       Button(action: {}) {
           HStack {
-              Image(systemName: "play.square")
-                  .foregroundColor(.white)
-            Text("Subscrice").font(.caption)
-              .bold()
+              Image(systemName: "checkmark.circle.fill")
+              .foregroundColor(.blue)
           }
           .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
-          .background(.green)
-          .clipShape(Capsule())
-          .foregroundColor(.white)
-      }
-      Button(action: {}) {
-          HStack {
-              Image(systemName: "bell.badge")
-                  .foregroundColor(.white)
-            Text("Notification").font(.caption)
-              .bold()
-          }
-          .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 10))
-          .background(.red)
+          .background(.white)
           .clipShape(Capsule())
           .foregroundColor(.white)
       }

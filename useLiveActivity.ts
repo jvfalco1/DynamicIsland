@@ -5,7 +5,11 @@ const useLiveActivities = () => {
   const {LiveActivityModule} = NativeModules;
 
   const startActivity = useCallback(
-    () => LiveActivityModule.startNotificationActivity('oi', 'tchau'),
+    () =>
+      LiveActivityModule.startNotificationActivity(
+        'Lama',
+        'Your transaction to João Falco has been sent.',
+      ),
     [LiveActivityModule],
   );
 
