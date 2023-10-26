@@ -7,7 +7,7 @@ const useLiveActivities = () => {
   const startActivity = useCallback(
     () =>
       LiveActivityModule.startNotificationActivity(
-        'Lama',
+        'Testing',
         'Your transaction to João Falco has been sent.',
       ),
     [LiveActivityModule],
